@@ -11,9 +11,9 @@ import Foundation
 class MainScene: CCScene {
     
     func freehand() {
-        let freehandScene = CCBReader.loadAsScene("FreehandScene")
-        let transition = CCDefaultTransition.transitionMoveInWithDirection(.Up, duration: 0.4)
-        CCDirector.sharedDirector().replaceScene(freehandScene, withTransition: transition)
+        let freehandScene = CCBReader.load(asScene: "FreehandScene")
+        let transition = CCDefaultTransition.transitionMoveIn(with: .up, duration: 0.4)
+        CCDirector.shared().replace(freehandScene, with: transition)
     }
     
 }

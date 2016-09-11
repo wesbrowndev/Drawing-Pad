@@ -8,27 +8,27 @@
 
 extension FreehandScene {
     func eraser() {
-        lineColor = CCColor.whiteColor()
+        lineColor = CCColor.white()
     }
     
     func black() {
-        lineColor = CCColor.blackColor()
+        lineColor = CCColor.black()
     }
     
     func gray() {
-        lineColor = CCColor.grayColor()
+        lineColor = CCColor.gray()
     }
     
     func blue() {
-        lineColor = CCColor.blueColor()
+        lineColor = CCColor.blue()
     }
     
     func red() {
-        lineColor = CCColor.redColor()
+        lineColor = CCColor.red()
     }
     
     func brown() {
-        lineColor = CCColor.brownColor()
+        lineColor = CCColor.brown()
     }
     
     func green() {
@@ -36,7 +36,7 @@ extension FreehandScene {
     }
     
     func orange() {
-        lineColor = CCColor.orangeColor()
+        lineColor = CCColor.orange()
     }
     
     func lightBlue() {
@@ -48,7 +48,7 @@ extension FreehandScene {
     }
     
     func yellow() {
-        lineColor = CCColor.yellowColor()
+        lineColor = CCColor.yellow()
     }
     
 }

@@ -26,8 +26,8 @@ class FreehandScene: CCNode {
     weak var eraserButton: CCButton!
     
     func reset() {
-        let freehandScene = CCBReader.loadAsScene("FreehandScene")
-        CCDirector.sharedDirector().presentScene(freehandScene)
+        let freehandScene = CCBReader.load(asScene: "FreehandScene")
+        CCDirector.shared().present(freehandScene)
     }
     
     func showSettings() {
@@ -41,28 +41,28 @@ class FreehandScene: CCNode {
     func save() {
         let authStatus = PHPhotoLibrary.authorizationStatus()
         
-        if authStatus == .Denied || authStatus == .Restricted {
+        if authStatus == .denied || authStatus == .restricted {
             showPhotosDeniedAlert()
             return
         } else {
             buttonsHidden()
             
-            let scene: CCScene = CCDirector.sharedDirector().runningScene
+            let scene: CCScene = CCDirector.shared().runningScene
             let n: CCNode = scene.children[0] as! CCNode
             let img: UIImage = self.screenshotWithStartNode(n)
         
             UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
             
-            if authStatus == .Authorized {
+            if authStatus == .authorized {
                 buttonsVisible()
                 savedToAlbum()
             }
         }
     }
     
-    func screenshotWithStartNode(startNode: CCNode) -> UIImage {
-        CCDirector.sharedDirector().nextDeltaTimeZero = true
-        let winSize: CGSize = CCDirector.sharedDirector().viewSize()
+    func screenshotWithStartNode(_ startNode: CCNode) -> UIImage {
+        CCDirector.shared().isNextDeltaTimeZero = true
+        let winSize: CGSize = CCDirector.shared().viewSize()
         let rtx: CCRenderTexture = CCRenderTexture(width: Int32(winSize.width), height: Int32(winSize.height))
         rtx.begin()
         startNode.visit()
@@ -71,23 +71,23 @@ class FreehandScene: CCNode {
     }
     
     func showPhotosDeniedAlert() {
-        let alert = UIAlertController(title: "Photo Access Disabled", message: "Please enable access to Photo Gallery in Settings/Privacy.", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let alert = UIAlertController(title: "Photo Access Disabled", message: "Please enable access to Photo Gallery in Settings/Privacy.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
-        CCDirector.sharedDirector().presentViewController(alert, animated: true, completion: nil)
+        CCDirector.shared().present(alert, animated: true, completion: nil)
     }
     
     func savedToAlbum() {
-        let alert = UIAlertController(title: "Saved to Photo Album", message: nil, preferredStyle: .Alert)
-        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let alert = UIAlertController(title: "Saved to Photo Album", message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
-        CCDirector.sharedDirector().presentViewController(alert, animated: true, completion: nil)
+        CCDirector.shared().present(alert, animated: true, completion: nil)
     }
     
     func shouldClose() {
-        let mainScene = CCBReader.loadAsScene("MainScene")
-        let transition = CCDefaultTransition.transitionFadeWithDuration(0.5)
-        CCDirector.sharedDirector().presentScene(mainScene, withTransition: transition)
+        let mainScene = CCBReader.load(asScene: "MainScene")
+        let transition = CCDefaultTransition.transitionFade(withDuration: 0.5)
+        CCDirector.shared().present(mainScene, with: transition)
     }
     
     func buttonsHidden() {

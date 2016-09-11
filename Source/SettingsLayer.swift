@@ -24,29 +24,29 @@ class SettingsLayer: CCNode {
         sizeSlider.sliderValue = Float(lineWidth / 16.0)
     }
     
-    func opacitySliderDidChange(sender: CCSlider) {
+    func opacitySliderDidChange(_ sender: CCSlider) {
         lineColor = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)
     }
     
-    func sizeSliderDidChange(sender: CCSlider) {
+    func sizeSliderDidChange(_ sender: CCSlider) {
         lineWidth = CGFloat(sizeSlider.sliderValue * 16.0)
         sizeBox.scaleX = sizeSlider.sliderValue * 8.0
         sizeBox.scaleY = sizeSlider.sliderValue * 8.0
     }
     
-    func redSliderDidChange(sender: CCSlider) {
+    func redSliderDidChange(_ sender: CCSlider) {
         red = CGFloat((redSlider.sliderValue * 255.0) / 255.0)
         lineColor = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)
         colorBox.color = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)
     }
     
-    func greenSliderDidChange(sender: CCSlider) {
+    func greenSliderDidChange(_ sender: CCSlider) {
         green = CGFloat((greenSlider.sliderValue * 255.0) / 255.0)
         lineColor = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)
         colorBox.color = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)
     }
     
-    func blueSliderDidChange(sender: CCSlider) {
+    func blueSliderDidChange(_ sender: CCSlider) {
         blue = CGFloat((blueSlider.sliderValue * 255.0) / 255.0)
         lineColor = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)
         colorBox.color = CCColor(red: Float(red), green: Float(green), blue: Float(blue), alpha: 1.0)

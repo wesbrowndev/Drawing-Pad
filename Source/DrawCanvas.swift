@@ -17,22 +17,22 @@ class DrawCanvas: CCDrawNode {
     override init!() {
         super.init()
         
-        userInteractionEnabled = true
-        lineColor = CCColor.blackColor()
+        isUserInteractionEnabled = true
+        lineColor = CCColor.black()
     }
 
-    override func touchBegan(touch: UITouch!, withEvent event: UIEvent!) {
+    override func touchBegan(_ touch: UITouch!, with event: UIEvent!) {
         if userInteraction == true {
-            drawDot(touch.locationInNode(self), radius: lineWidth, color: lineColor)
+            drawDot(touch.location(in: self), radius: lineWidth, color: lineColor)
         }
     }
     
-    override func touchMoved(touch: UITouch!, withEvent event: UIEvent) {
+    override func touchMoved(_ touch: UITouch!, with event: UIEvent) {
         if userInteraction == true {
-            let prevLocationInView = touch.previousLocationInView(touch.view)
-            let prevLocationInWorld = CCDirector.sharedDirector().convertToGL(prevLocationInView)
-            let prevoiusLocation = self.convertToNodeSpace(prevLocationInWorld)
-            drawSegmentFrom(prevoiusLocation, to: touch.locationInNode(self), radius: lineWidth, color: lineColor)
+            let prevLocationInView = touch.previousLocation(in: touch.view)
+            let prevLocationInWorld = CCDirector.shared().convert(toGL: prevLocationInView)
+            let prevoiusLocation = self.convert(toNodeSpace: prevLocationInWorld)
+            drawSegment(from: prevoiusLocation, to: touch.location(in: self), radius: lineWidth, color: lineColor)
         }
     }
 
