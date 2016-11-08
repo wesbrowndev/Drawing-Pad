@@ -24,6 +24,7 @@ class FreehandScene: CCNode {
     weak var lightGreenCrayon: CCButton!
     weak var yellowCrayon: CCButton!
     weak var eraserButton: CCButton!
+    weak var exitButton: CCButton!
     
     func reset() {
         let freehandScene = CCBReader.load(asScene: "FreehandScene")
@@ -105,6 +106,7 @@ class FreehandScene: CCNode {
         lightGreenCrayon.visible = false
         yellowCrayon.visible = false
         eraserButton.visible = false
+        exitButton.visible = false
     }
     
     func buttonsVisible() {
@@ -122,6 +124,7 @@ class FreehandScene: CCNode {
         lightGreenCrayon.visible = true
         yellowCrayon.visible = true
         eraserButton.visible = true
+        exitButton.visible = true
     }
     
 }
