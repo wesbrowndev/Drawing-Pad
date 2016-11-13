@@ -31,8 +31,8 @@ class DrawCanvas: CCDrawNode {
         if userInteraction == true {
             let prevLocationInView = touch.previousLocation(in: touch.view)
             let prevLocationInWorld = CCDirector.shared().convert(toGL: prevLocationInView)
-            let prevoiusLocation = self.convert(toNodeSpace: prevLocationInWorld)
-            drawSegment(from: prevoiusLocation, to: touch.location(in: self), radius: lineWidth, color: lineColor)
+            let previousLocation = self.convert(toNodeSpace: prevLocationInWorld)
+            drawSegment(from: previousLocation, to: touch.location(in: self), radius: lineWidth, color: lineColor)
         }
     }
 
