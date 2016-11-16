@@ -51,8 +51,11 @@ class FreehandScene: CCNode {
             let scene: CCScene = CCDirector.shared().runningScene
             let n: CCNode = scene.children[0] as! CCNode
             let img: UIImage = self.screenshotWithStartNode(n)
-        
+            
             UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
+            if authStatus == .notDetermined {
+                buttonsVisible()
+            }
             
             if authStatus == .authorized {
                 buttonsVisible()

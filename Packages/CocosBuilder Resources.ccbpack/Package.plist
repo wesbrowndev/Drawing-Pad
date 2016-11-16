@@ -16,6 +16,18 @@
 				<string>tablethd</string>
 			</array>
 		</dict>
+		<key>tvos</key>
+		<dict>
+			<key>audio_quality</key>
+			<integer>4</integer>
+			<key>resolutions</key>
+			<array>
+				<string>phone</string>
+				<string>phonehd</string>
+				<string>tablet</string>
+				<string>tablethd</string>
+			</array>
+		</dict>
 	</dict>
 	<key>outputDir</key>
 	<string></string>
