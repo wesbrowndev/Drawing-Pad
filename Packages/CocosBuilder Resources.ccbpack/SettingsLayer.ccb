@@ -267,6 +267,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -818,7 +820,7 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>74</real>
+													<real>72</real>
 													<real>20</real>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -866,7 +868,7 @@
 												<key>type</key>
 												<string>FontTTF</string>
 												<key>value</key>
-												<string>Helvetica</string>
+												<string>MarkerFelt-Thin</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -1025,7 +1027,7 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>108</real>
+													<real>104</real>
 													<real>17</real>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -1282,7 +1284,7 @@
 												<key>value</key>
 												<array>
 													<real>0.0</real>
-													<real>9</real>
+													<real>8</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -1359,8 +1361,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>65</real>
-													<real>9</real>
+													<real>64</real>
+													<real>8</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -1407,7 +1409,7 @@
 												<key>type</key>
 												<string>FontTTF</string>
 												<key>value</key>
-												<string>Helvetica</string>
+												<string>MarkerFelt-Thin</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -1566,8 +1568,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>90</real>
-													<real>6</real>
+													<real>88</real>
+													<real>5</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -1731,7 +1733,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
+											<real>0.0</real>
 											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1921,7 +1923,7 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>66</real>
+													<real>64</real>
 													<real>20</real>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -1969,7 +1971,7 @@
 												<key>type</key>
 												<string>FontTTF</string>
 												<key>value</key>
-												<string>Helvetica</string>
+												<string>MarkerFelt-Thin</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2026,9 +2028,9 @@
 												<string>Color4</string>
 												<key>value</key>
 												<array>
-													<real>0.0</real>
-													<real>1</real>
-													<real>0.0</real>
+													<real>0.20000000298023224</real>
+													<real>0.60000002384185791</real>
+													<real>0.20000000298023224</real>
 													<real>1</real>
 												</array>
 											</dict>
@@ -2128,7 +2130,7 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>92</real>
+													<real>88</real>
 													<real>17</real>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -2294,7 +2296,7 @@
 										<key>value</key>
 										<array>
 											<real>0.0</real>
-											<real>78</real>
+											<real>76</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2385,7 +2387,7 @@
 												<key>value</key>
 												<array>
 													<real>0.0</real>
-													<real>9</real>
+													<real>8</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -2462,8 +2464,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>66</real>
-													<real>9</real>
+													<real>64</real>
+													<real>8</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -2510,7 +2512,7 @@
 												<key>type</key>
 												<string>FontTTF</string>
 												<key>value</key>
-												<string>Helvetica</string>
+												<string>MarkerFelt-Thin</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2669,8 +2671,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>92</real>
-													<real>6</real>
+													<real>88</real>
+													<real>5</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -2835,7 +2837,7 @@
 										<key>value</key>
 										<array>
 											<real>0.0</real>
-											<real>128</real>
+											<real>126</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2918,8 +2920,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>121</real>
-											<real>175</real>
+											<real>119</real>
+											<real>170</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2966,7 +2968,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>HelveticaNeue-UltraLight</string>
+										<string>MarkerFelt-Thin</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -3327,8 +3329,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

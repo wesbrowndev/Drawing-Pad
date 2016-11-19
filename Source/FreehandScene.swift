@@ -14,14 +14,11 @@ class FreehandScene: CCNode {
     weak var saveButton: CCButton!
     weak var settingsButton: CCButton!
     weak var blackCrayon: CCButton!
-    weak var grayCrayon: CCButton!
-    weak var brownCrayon: CCButton!
-    weak var redCrayon: CCButton!
     weak var blueCrayon: CCButton!
+    weak var purpleCrayon: CCButton!
+    weak var redCrayon: CCButton!
     weak var greenCrayon: CCButton!
     weak var orangeCrayon: CCButton!
-    weak var lightBlueCrayon: CCButton!
-    weak var lightGreenCrayon: CCButton!
     weak var yellowCrayon: CCButton!
     weak var eraserButton: CCButton!
     weak var exitButton: CCButton!
@@ -51,7 +48,7 @@ class FreehandScene: CCNode {
             let scene: CCScene = CCDirector.shared().runningScene
             let n: CCNode = scene.children[0] as! CCNode
             let img: UIImage = self.screenshotWithStartNode(n)
-            
+        
             UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
             if authStatus == .notDetermined {
                 buttonsVisible()
@@ -99,14 +96,10 @@ class FreehandScene: CCNode {
         saveButton.visible = false
         settingsButton.visible = false
         blackCrayon.visible = false
-        grayCrayon.visible = false
-        brownCrayon.visible = false
         redCrayon.visible = false
         blueCrayon.visible = false
         greenCrayon.visible = false
         orangeCrayon.visible = false
-        lightBlueCrayon.visible = false
-        lightGreenCrayon.visible = false
         yellowCrayon.visible = false
         eraserButton.visible = false
         exitButton.visible = false
@@ -117,14 +110,10 @@ class FreehandScene: CCNode {
         saveButton.visible = true
         settingsButton.visible = true
         blackCrayon.visible = true
-        grayCrayon.visible = true
-        brownCrayon.visible = true
         redCrayon.visible = true
         blueCrayon.visible = true
         greenCrayon.visible = true
         orangeCrayon.visible = true
-        lightBlueCrayon.visible = true
-        lightGreenCrayon.visible = true
         yellowCrayon.visible = true
         eraserButton.visible = true
         exitButton.visible = true

@@ -15,36 +15,25 @@ extension FreehandScene {
         lineColor = CCColor.black()
     }
     
-    func gray() {
-        lineColor = CCColor.gray()
-    }
-    
     func blue() {
         lineColor = CCColor.blue()
+    }
+    
+    func purple() {
+        lineColor = CCColor.purple()
     }
     
     func red() {
         lineColor = CCColor.red()
     }
     
-    func brown() {
-        lineColor = CCColor.brown()
-    }
-    
     func green() {
-        lineColor = CCColor(red: 0/255, green: 153/255, blue: 0/255, alpha: 1.0)
+        //lineColor = CCColor(red: 0/255, green: 153/255, blue: 0/255, alpha: 1.0)
+        lineColor = CCColor.green()
     }
     
     func orange() {
         lineColor = CCColor.orange()
-    }
-    
-    func lightBlue() {
-        lineColor = CCColor(red: 0/255, green: 255/255, blue: 255/255, alpha: 1.0)
-    }
-    
-    func lightGreen() {
-        lineColor = CCColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1.0)
     }
     
     func yellow() {

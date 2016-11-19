@@ -1,14 +1,9 @@
-//
-//  MainScene.swift
-//  MyPad
-//
-//  Created by Wes Brown on 4/10/16.
-//  Copyright © 2016 Wes Brown. All rights reserved.
-//
-
 import Foundation
 
 class MainScene: CCScene {
+    override init!() {
+        super.init()
+    }
     
     func freehand() {
         let freehandScene = CCBReader.load(asScene: "FreehandScene")
@@ -16,4 +11,10 @@ class MainScene: CCScene {
         CCDirector.shared().replace(freehandScene, with: transition)
     }
     
+    func about() {
+        let freehandScene = CCBReader.load(asScene: "AboutScene")
+        let transition = CCDefaultTransition.transitionMoveIn(with: .up, duration: 0.4)
+        CCDirector.shared().replace(freehandScene, with: transition)
+    }
+
 }

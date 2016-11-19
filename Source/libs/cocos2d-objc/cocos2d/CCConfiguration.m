@@ -394,7 +394,7 @@ static char * glExtensions;
 	printf("cocos2d: Multi-threaded rendering: %d\n", CC_RENDER_DISPATCH_ENABLED);
 	
 	if(_graphicsAPI == CCGraphicsAPIGL){
-		printf("cocos2d: OpenGL Rendering enabled.");
+		printf("cocos2d: OpenGL Rendering enabled.\n");
 		
 		CCRenderDispatch(NO, ^{
 			printf("cocos2d: GL_VENDOR:    %s\n", glGetString(GL_VENDOR) );
